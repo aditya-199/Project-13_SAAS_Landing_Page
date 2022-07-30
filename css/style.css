@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Saira', sans-serif;
+}
+
+body {
+    --header-color: #592291;
+    --text-color: #fff;
+    --btn-color: #12d0de;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================= <NavBar Header>================= */
+.header {
+    padding: 3rem 16rem;
+    background-color: var(--header-color)
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-color);
+}
+
+.nav-left {
+    width: 40%;
+}
+
+.nav-left img {
+    width: 14rem;
+    height: 5rem;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    gap: 10rem;
+}
+
+.nav_list {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 5rem;
+}
+
+.nav_links {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all .1s linear;
+}
+
+.nav_links:hover {
+    /* padding:0 0 0 .2rem; */
+    border-bottom: 1px solid #b04123;
+    color: var(--btn-color);
+}
+
+.btn_div {
+
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.btn_active {
+    border: none;
+    outline: none;
+    background: var(--btn-color);
+}
+
+.hearder_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.left {
+    width: 50%;
+    /* background-color: #12d0de; */
+}
+
+.right {
+    width: 50%;
+    /* background-color: yellowgreen; */
+    /* padding: 0 20rem; */
+    text-align: start;
+}
+
+.left img {
+    width: 79rem;
+    height: 52rem;
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    /* background-color:red */
+}
+
+.object_fit {
+    object-fit: cover;
+}
+
+.object_position_tl {
+    object-position: top left;
+}
+
+.object_position_tr {
+    object-position: top right;
+}
+
+.object_position_ {
+    object-position: center;
+}
+
+
+.h1_bolder {
+    width: 40rem;
+    font-size: 5rem;
+    /* height: 2rem; */
+    color: var(--text-color);
+    /* word-spacing: .1rem; */
+}
+
+.h1_normal {
+    width: 40rem;
+    font-size: 3rem;
+    font-weight: 650;
+    margin-bottom: 1.4rem;
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+}
+
+.h1_head {
+    width: 45rem;
+    font-size: 3.5rem;
+    /* word-spacing: .4rem;  */
+    text-align: center;
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.right {
+    flex-direction: column;
+}
+
+.text_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para_align {
+    width: 18rem;
+    /* text-align: center; */
+}
+
+.para {
+    margin-top: 2rem;
+    width: 50rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: 8rem;
+    color: var(--text-color);
+}
+
+.para1 {
+    margin: 1rem 0;
+    width: 25rem;
+    font-size: 1rem;
+    font-weight: 100;
+    /* height: 8rem; */
+    color: #000;
+}
+
+li {
+    list-style: none;
+    position: relative;
+}
+
+li:first-child::before {
+    content: url(/image/o/icons8-forward-32.png);
+    position: relative;
+    top: 45px;
+    left: -37px;
+
+}
+
+li:nth-child(2)::before {
+    content: url(/image/o/icons8-forward-322.png);
+    position: relative;
+    top: 45px;
+    left: -37px;
+}
+
+li:nth-child(3)::before {
+    content: url(/image/o/icons8-forward-32\ \(1\).png);
+    position: relative;
+    top: 45px;
+    left: -37px;
+}
+
+/* ================= <NavBar Header END>================= */
+
+/* ================= <Header 2 Header Start>================= */
+
+ul {
+
+    width: 36rem;
+}
+
+h2 {
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.1rem 0;
+
+}
+
+/* ================= <Header 2 Header END>================= */
+
+/* ================= <Section Grid Start>================= */
+
+
+
+.section_grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.section_grid > div {
+    padding: 3rem 3rem;
+    /* border: 1px solid red; */
+    box-shadow: 3px 1px 0px rgb(0 0 0 / 30%);
+    /* text-align: center; */
+    margin: 0 20px;
+    border-radius: 60px;
+    width: 24rem;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    
+}
+
+
+
+.section_grid > div img{
+    position: relative;
+    margin-bottom: 6rem;
+} 
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* color: #ffffff; */
+    text-align: center;
+    padding: 2rem 0rem;
+    margin: 0px 10px;
+    width: 110%;
+    position: relative;
+}
+
+
+.foot::before{
+    content: '';
+    left: 0;
+    width: 22rem;
+    height: 12rem;
+    position: absolute;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 5rem;
+    background-color: #5C21B1;
+    
+    z-index: -1;
+    display: none;
+}
+
+.foot:hover::before{
+    display: block;
+    color: #fff;
+}
+/* ================= <Section Grid END>================= */
